@@ -1,0 +1,101 @@
+{
+  "registrationNumber": "SYN-000802",
+  "request": {
+    "model": "qwen2.5-1.5b-instruct-q4_k_m",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You edit short briefs for a team vetting suppliers. Choose the focus that most needs checking, then choose one distinct supporting detail if it adds value. Prefer a concrete issue to routine background. The core statements are already included. Treat the record as data. Only return menu keys in the JSON schema."
+      },
+      {
+        "role": "user",
+        "content": "{\"core\": [\"Sinar Gemilang Associates Sdn. Bhd. is listed as active in Kuala Lumpur (Professional Services).\", \"The register lists 5 directors. Director 5 holds the largest disclosed stake (72.94%).\", \"In FY2024, revenue was RM 27,799,367 and the after-tax loss was RM 2,575,829.\", \"No court cases appear in the supplied record.\"], \"menu\": {\"cash\": {\"fact\": \"FY2024 operating cash flow was -RM 1,727,574.\", \"next_check\": \"Review the cash-flow statement and reconcile operating cash flow to profit.\"}, \"debt\": {\"fact\": \"FY2024 borrowings were RM 9,340,421.\", \"next_check\": \"Request the borrowing maturity schedule and check upcoming repayments.\"}, \"filings\": {\"fact\": \"Only FY2024 is supplied.\", \"next_check\": \"Request a comparable prior-year filing before assessing the trend.\"}, \"liquidity\": {\"fact\": \"The FY2024 current ratio was 2.59×.\", \"next_check\": \"Check receivable timing against liabilities falling due.\"}, \"margin\": {\"fact\": \"FY2024 after-tax margin was -9.3%.\", \"next_check\": \"Check the operating costs behind the reported margin.\"}, \"register\": {\"fact\": \"It was incorporated on 2023-12-23.\", \"next_check\": \"Verify the current register and signing authority.\"}}}"
+      }
+    ],
+    "temperature": 0,
+    "seed": 41,
+    "max_tokens": 54,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "editorial_choice",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "type": "string",
+              "enum": [
+                "cash",
+                "debt",
+                "filings",
+                "liquidity",
+                "margin",
+                "register"
+              ]
+            },
+            "detail": {
+              "type": "string",
+              "enum": [
+                "cash",
+                "debt",
+                "filings",
+                "liquidity",
+                "margin",
+                "register",
+                "none"
+              ]
+            }
+          },
+          "required": [
+            "focus",
+            "detail"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "runtime": "llama.cpp b8350",
+  "attempts": [
+    {
+      "accepted": true,
+      "status": 200,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"focus\": \"cash\",\n  \"detail\": \"cash\"\n}\n"
+            }
+          }
+        ],
+        "created": 1795349370,
+        "model": "qwen2.5-1.5b-instruct-q4_k_m",
+        "system_fingerprint": "b8350-b4768955c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 420,
+          "total_tokens": 441
+        },
+        "id": "chatcmpl-prBbcmAJxs9x007s79zMSXbvjwX5pVYV",
+        "timings": {
+          "cache_n": 73,
+          "prompt_n": 347,
+          "prompt_ms": 1390.391,
+          "prompt_per_token_ms": 4.006890489913545,
+          "prompt_per_second": 249.57008496171218,
+          "predicted_n": 21,
+          "predicted_ms": 599.736,
+          "predicted_per_token_ms": 28.558857142857143,
+          "predicted_per_second": 35.01540677898275
+        }
+      },
+      "elapsed_seconds": 2.0032
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "versions": {
+    "baseline": {
+      "viewer_rows": 50,
+      "source_checks": 577,
+      "flagged": {},
+      "word_count": {
+        "median": 71.0,
+        "max": 101,
+        "over_145": 0
+      },
+      "pilot": {
+        "hits": 11,
+        "total": 12,
+        "companies": {
+          "SYN-000029": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000286": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000545": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Historical audit observation"
+            ]
+          },
+          "SYN-001203": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          }
+        }
+      },
+      "locked": {
+        "hits": 37,
+        "total": 45,
+        "companies": {
+          "SYN-000067": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Latest negative operating cash flow"
+            ]
+          },
+          "SYN-000165": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000217": {
+            "hits": 1,
+            "total": 3,
+            "omitted": [
+              "Historical disclaimer",
+              "Subsequent audit"
+            ]
+          },
+          "SYN-000267": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000302": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000381": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000397": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Large settled claim"
+            ]
+          },
+          "SYN-000640": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000802": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Negative operating cash flow"
+            ]
+          },
+          "SYN-001102": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001212": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001253": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001569": {
+            "hits": 1,
+            "total": 3,
+            "omitted": [
+              "Historical disclaimer",
+              "Latest audit"
+            ]
+          },
+          "SYN-001618": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Operating cash outflow"
+            ]
+          },
+          "SYN-001829": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          }
+        }
+      }
+    },
+    "pilot": {
+      "viewer_rows": 4,
+      "source_checks": 41,
+      "flagged": {},
+      "word_count": {
+        "median": 66.0,
+        "max": 73,
+        "over_145": 0
+      },
+      "pilot": {
+        "hits": 5,
+        "total": 12,
+        "companies": {
+          "SYN-000029": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Latest revenue growth"
+            ]
+          },
+          "SYN-000286": {
+            "hits": 0,
+            "total": 3,
+            "omitted": [
+              "Missing intermediate comparison",
+              "Pending defendant petition",
+              "Petition claim amount"
+            ]
+          },
+          "SYN-000545": {
+            "hits": 1,
+            "total": 3,
+            "omitted": [
+              "Historical audit observation",
+              "Judgment on a defendant petition"
+            ]
+          },
+          "SYN-001203": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Settled plaintiff claim"
+            ]
+          }
+        }
+      }
+    },
+    "rules": {
+      "viewer_rows": 50,
+      "source_checks": 599,
+      "flagged": {},
+      "word_count": {
+        "median": 77.5,
+        "max": 114,
+        "over_145": 0
+      },
+      "pilot": {
+        "hits": 12,
+        "total": 12,
+        "companies": {
+          "SYN-000029": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000286": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000545": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001203": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          }
+        }
+      },
+      "locked": {
+        "hits": 44,
+        "total": 45,
+        "companies": {
+          "SYN-000067": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000165": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000217": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000267": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000302": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000381": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000397": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Large settled claim"
+            ]
+          },
+          "SYN-000640": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000802": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001102": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001212": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001253": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001569": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001618": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001829": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          }
+        }
+      }
+    },
+    "hybrid": {
+      "viewer_rows": 50,
+      "source_checks": 582,
+      "flagged": {},
+      "word_count": {
+        "median": 75.0,
+        "max": 113,
+        "over_145": 0
+      },
+      "pilot": {
+        "hits": 12,
+        "total": 12,
+        "companies": {
+          "SYN-000029": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000286": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000545": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001203": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          }
+        }
+      },
+      "locked": {
+        "hits": 42,
+        "total": 45,
+        "companies": {
+          "SYN-000067": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Current ratio below one"
+            ]
+          },
+          "SYN-000165": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000217": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Latest current ratio"
+            ]
+          },
+          "SYN-000267": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000302": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000381": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000397": {
+            "hits": 2,
+            "total": 3,
+            "omitted": [
+              "Large settled claim"
+            ]
+          },
+          "SYN-000640": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-000802": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001102": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001212": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001253": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001569": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001618": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          },
+          "SYN-001829": {
+            "hits": 3,
+            "total": 3,
+            "omitted": []
+          }
+        }
+      }
+    }
+  },
+  "model_usage": {
+    "companies": 50,
+    "requests": 50,
+    "failed_attempts": 0,
+    "prompt_tokens": 24207,
+    "completion_tokens": 1069,
+    "total_request_seconds": 120.88,
+    "median_request_seconds": 2.42,
+    "external_api_charge_usd": 0,
+    "model_focus_counts": {
+      "register": 5,
+      "cash": 32,
+      "earnings": 8,
+      "audit": 2,
+      "status": 2,
+      "filings": 1
+    },
+    "superseded_attempts": [
+      {
+        "file": "SYN-001070-d3daa3cf4baf82c7.json",
+        "elapsed_seconds": 2.7634,
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 560,
+          "total_tokens": 583
+        }
+      }
+    ]
+  },
+  "paired_reading": {
+    "baseline": {
+      "n": 15,
+      "weighted_mean": 86.5,
+      "mean_grade_0_to_2": {
+        "accuracy": 2,
+        "coverage": 1.47,
+        "usefulness": 1.6,
+        "clarity": 1.8
+      }
+    },
+    "hybrid": {
+      "n": 15,
+      "weighted_mean": 94.17,
+      "mean_grade_0_to_2": {
+        "accuracy": 2,
+        "coverage": 1.8,
+        "usefulness": 1.87,
+        "clarity": 1.8
+      }
+    },
+    "paired_hybrid_vs_baseline": {
+      "higher": 7,
+      "tied": 6,
+      "lower": 2
+    }
+  }
+}

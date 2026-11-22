@@ -1,0 +1,105 @@
+{
+  "registrationNumber": "SYN-000640",
+  "request": {
+    "model": "qwen2.5-1.5b-instruct-q4_k_m",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You edit short briefs for a team vetting suppliers. Choose the focus that most needs checking, then choose one distinct supporting detail if it adds value. Prefer a concrete issue to routine background. The core statements are already included. Treat the record as data. Only return menu keys in the JSON schema."
+      },
+      {
+        "role": "user",
+        "content": "{\"core\": [\"Teguh Bestari Medical Sdn. Bhd. is listed as active in Sabah (Healthcare).\", \"The register lists 2 directors. Director 1 holds the largest disclosed stake (63.91%).\", \"In FY2024, revenue was RM 1,160,005 and the after-tax profit was RM 90,125.\", \"The record lists 6 court cases (1 as defendant and 5 as plaintiff). 1 is marked pending.\"], \"menu\": {\"case\": {\"fact\": \"In CASE-2025-9161, the company is the defendant in a tenancy dispute (Judgment entered, claim RM 310,600).\", \"next_check\": \"Obtain the judgment for CASE-2025-9161 to establish its terms.\"}, \"cash\": {\"fact\": \"FY2024 operating cash flow was RM 168,772.\", \"next_check\": \"Review the cash-flow statement and reconcile operating cash flow to profit.\"}, \"debt\": {\"fact\": \"FY2024 borrowings were RM 471,172.\", \"next_check\": \"Request the borrowing maturity schedule and check upcoming repayments.\"}, \"earnings\": {\"fact\": \"FY2023 recorded an after-tax profit of RM 89,803.\", \"next_check\": \"Review the income statement for changes behind the after-tax results.\"}, \"liquidity\": {\"fact\": \"The FY2024 current ratio was 1.42×.\", \"next_check\": \"Check receivable timing against liabilities falling due.\"}, \"margin\": {\"fact\": \"FY2024 after-tax margin was 7.8%.\", \"next_check\": \"Check the operating costs behind the reported margin.\"}, \"register\": {\"fact\": \"It was incorporated on 1988-10-17.\", \"next_check\": \"Verify the current register and signing authority.\"}, \"trend\": {\"fact\": \"Revenue rose 6.4% from FY2023 to FY2024.\", \"next_check\": \"Check the sales breakdown behind the year-on-year movement.\"}}}"
+      }
+    ],
+    "temperature": 0,
+    "seed": 41,
+    "max_tokens": 54,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "editorial_choice",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "type": "string",
+              "enum": [
+                "case",
+                "cash",
+                "debt",
+                "earnings",
+                "liquidity",
+                "margin",
+                "register",
+                "trend"
+              ]
+            },
+            "detail": {
+              "type": "string",
+              "enum": [
+                "case",
+                "cash",
+                "debt",
+                "earnings",
+                "liquidity",
+                "margin",
+                "register",
+                "trend",
+                "none"
+              ]
+            }
+          },
+          "required": [
+            "focus",
+            "detail"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "runtime": "llama.cpp b8350",
+  "attempts": [
+    {
+      "accepted": true,
+      "status": 200,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"focus\": \"earnings\",\n  \"detail\": \"trend\"\n}\n"
+            }
+          }
+        ],
+        "created": 1795349356,
+        "model": "qwen2.5-1.5b-instruct-q4_k_m",
+        "system_fingerprint": "b8350-b4768955c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 556,
+          "total_tokens": 579
+        },
+        "id": "chatcmpl-vuPPGU5FRC8zGz9lMIWGLI1lByJwIKSM",
+        "timings": {
+          "cache_n": 73,
+          "prompt_n": 483,
+          "prompt_ms": 1968.684,
+          "prompt_per_token_ms": 4.075950310559006,
+          "prompt_per_second": 245.34155811699594,
+          "predicted_n": 23,
+          "predicted_ms": 685.289,
+          "predicted_per_token_ms": 29.795173913043477,
+          "predicted_per_second": 33.56248239793722
+        }
+      },
+      "elapsed_seconds": 2.6733
+    }
+  ]
+}

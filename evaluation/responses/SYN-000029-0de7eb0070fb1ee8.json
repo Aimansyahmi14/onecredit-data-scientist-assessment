@@ -1,0 +1,103 @@
+{
+  "registrationNumber": "SYN-000029",
+  "request": {
+    "model": "qwen2.5-1.5b-instruct-q4_k_m",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You edit short briefs for a team vetting suppliers. Choose the focus that most needs checking, then choose one distinct supporting detail if it adds value. Prefer a concrete issue to routine background. The core statements are already included. Treat the record as data. Only return menu keys in the JSON schema."
+      },
+      {
+        "role": "user",
+        "content": "{\"core\": [\"Unity Global Trading Sdn. Bhd. is listed as active in Selangor (Retail).\", \"The register lists 5 directors. Director 4 holds the largest disclosed stake (58.25%).\", \"In FY2024, revenue was RM 5,352,856 and the after-tax profit was RM 96,805.\", \"No court cases appear in the supplied record.\"], \"menu\": {\"cash\": {\"fact\": \"FY2024 operating cash flow was RM 113,617.\", \"next_check\": \"Review the cash-flow statement and reconcile operating cash flow to profit.\"}, \"debt\": {\"fact\": \"FY2024 borrowings were RM 2,112,710.\", \"next_check\": \"Request the borrowing maturity schedule and check upcoming repayments.\"}, \"earnings\": {\"fact\": \"FY2023 recorded an after-tax profit of RM 97,951.\", \"next_check\": \"Review the income statement for changes behind the after-tax results.\"}, \"liquidity\": {\"fact\": \"The FY2024 current ratio was 1.48×.\", \"next_check\": \"Check receivable timing against liabilities falling due.\"}, \"margin\": {\"fact\": \"FY2024 after-tax margin was 1.8%.\", \"next_check\": \"Check the operating costs behind the reported margin.\"}, \"register\": {\"fact\": \"It was incorporated on 2018-06-15.\", \"next_check\": \"Verify the current register and signing authority.\"}, \"trend\": {\"fact\": \"Revenue rose 2.4% from FY2023 to FY2024.\", \"next_check\": \"Check the sales breakdown behind the year-on-year movement.\"}}}"
+      }
+    ],
+    "temperature": 0,
+    "seed": 41,
+    "max_tokens": 54,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "editorial_choice",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "type": "string",
+              "enum": [
+                "cash",
+                "debt",
+                "earnings",
+                "liquidity",
+                "margin",
+                "register",
+                "trend"
+              ]
+            },
+            "detail": {
+              "type": "string",
+              "enum": [
+                "cash",
+                "debt",
+                "earnings",
+                "liquidity",
+                "margin",
+                "register",
+                "trend",
+                "none"
+              ]
+            }
+          },
+          "required": [
+            "focus",
+            "detail"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "runtime": "llama.cpp b8350",
+  "attempts": [
+    {
+      "accepted": true,
+      "status": 200,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"focus\": \"register\",\n  \"detail\": \"register\"\n}\n"
+            }
+          }
+        ],
+        "created": 1795349224,
+        "model": "qwen2.5-1.5b-instruct-q4_k_m",
+        "system_fingerprint": "b8350-b4768955c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 467,
+          "total_tokens": 488
+        },
+        "id": "chatcmpl-GtFj7l3rECLhqsFPBVQPfSuOZyoxR0Ez",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 467,
+          "prompt_ms": 2037.684,
+          "prompt_per_token_ms": 4.363349036402569,
+          "prompt_per_second": 229.18175732841797,
+          "predicted_n": 21,
+          "predicted_ms": 691.429,
+          "predicted_per_token_ms": 32.92519047619047,
+          "predicted_per_second": 30.371882000899586
+        }
+      },
+      "elapsed_seconds": 2.7448
+    }
+  ]
+}

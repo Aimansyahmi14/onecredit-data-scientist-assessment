@@ -1,0 +1,131 @@
+{
+  "as_of": "2025-12-31",
+  "data_sha256": "4ac588ef336a0f5c361b2e896b4490c4da4a970ae261fa3240ba512b24747087",
+  "companies": 50,
+  "unique_ids": 50,
+  "financial_periods": 127,
+  "court_cases": 72,
+  "counts": {
+    "loss_in_latest_filing": 11,
+    "negative_operating_cash_in_latest_filing": 11,
+    "latest_current_assets_below_current_liabilities": 7,
+    "director_entries": 177,
+    "shareholder_entries": 134,
+    "companies_with_corporate_shareholder": 8,
+    "companies_with_director_shareholder_overlap": 46,
+    "companies_with_cases": 18,
+    "companies_with_both_legal_roles": 5,
+    "companies_with_former_names": 5
+  },
+  "distributions": {
+    "financial_year_count": {
+      "3": 38,
+      "2": 4,
+      "0": 3,
+      "1": 5
+    },
+    "years_supplied": {
+      "2022,2023,2024": 38,
+      "2022,2024": 4,
+      "none": 3,
+      "2024": 5
+    },
+    "industry": {
+      "Retail": 6,
+      "Hospitality": 7,
+      "Healthcare": 5,
+      "Logistics": 2,
+      "Education": 3,
+      "Food & Beverage": 7,
+      "Professional Services": 5,
+      "Manufacturing": 4,
+      "Technology": 5,
+      "Agriculture": 3,
+      "Construction": 3
+    },
+    "state": {
+      "Selangor": 13,
+      "Kuala Lumpur": 16,
+      "Kelantan": 2,
+      "Pulau Pinang": 4,
+      "Sabah": 2,
+      "Perak": 2,
+      "Sarawak": 3,
+      "Kedah": 2,
+      "Pahang": 1,
+      "Terengganu": 1,
+      "Labuan": 3,
+      "Perlis": 1
+    },
+    "status": {
+      "Active": 48,
+      "Winding up": 2
+    },
+    "audit_opinion": {
+      "Unqualified": 124,
+      "Disclaimer of opinion": 2,
+      "Unqualified with material uncertainty on going concern": 1
+    },
+    "case_role": {
+      "plaintiff": 32,
+      "defendant": 40
+    },
+    "case_status": {
+      "Settled": 19,
+      "Pending": 19,
+      "Dismissed": 10,
+      "Withdrawn": 13,
+      "Judgment entered": 11
+    },
+    "null_ratio": {
+      "taxEfficiencyRatio": 33,
+      "daysInventoryOutstanding": 34,
+      "inventoryTurnover": 34
+    },
+    "case_counts_per_company": {
+      "0": 32,
+      "1": 4,
+      "5": 3,
+      "6": 3,
+      "2": 4,
+      "8": 3,
+      "3": 1
+    }
+  },
+  "detail": {
+    "no_financials": [
+      "SYN-000302",
+      "SYN-000333",
+      "SYN-001203"
+    ],
+    "one_filing": [
+      "SYN-000802",
+      "SYN-001158",
+      "SYN-001294",
+      "SYN-001298",
+      "SYN-001560"
+    ],
+    "gapped_filings": [
+      "SYN-000286",
+      "SYN-000397",
+      "SYN-001253",
+      "SYN-001970"
+    ],
+    "historical_audit_attention": [
+      "SYN-000217/FY2023",
+      "SYN-000545/FY2022",
+      "SYN-001569/FY2022"
+    ],
+    "winding_up": [
+      "SYN-000545",
+      "SYN-001212"
+    ],
+    "share_total_mismatch": [],
+    "duplicate_fiscal_year": [],
+    "balance_mismatch": [],
+    "net_margin_mismatch": [],
+    "duplicate_case_number": [],
+    "dated_after_snapshot": [],
+    "nonpositive_revenue": []
+  }
+}

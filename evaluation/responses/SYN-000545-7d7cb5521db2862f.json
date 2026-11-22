@@ -1,0 +1,109 @@
+{
+  "registrationNumber": "SYN-000545",
+  "request": {
+    "model": "qwen2.5-1.5b-instruct-q4_k_m",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You edit short briefs for a team vetting suppliers. Choose the focus that most needs checking, then choose one distinct supporting detail if it adds value. Prefer a concrete issue to routine background. The core statements are already included. Treat the record as data. Only return menu keys in the JSON schema."
+      },
+      {
+        "role": "user",
+        "content": "{\"core\": [\"Cahaya Golden Systems Sdn. Bhd. is listed as winding up in Selangor (Technology).\", \"The register lists 3 directors. Director 2 holds the largest disclosed stake (52.17%).\", \"In FY2024, revenue was RM 13,006,124 and the after-tax profit was RM 1,278,980.\", \"The record lists 8 court cases (8 as defendant). 4 are marked pending.\"], \"menu\": {\"audit\": {\"fact\": \"The FY2022 audit opinion was “Unqualified with material uncertainty on going concern”. The FY2024 audit opinion was “Unqualified”.\", \"next_check\": \"Read the auditor’s report and management’s response to the earlier findings.\"}, \"case\": {\"fact\": \"In CASE-2023-1186, the company is the defendant in a winding-up petition (Judgment entered, claim RM 10,000).\", \"next_check\": \"Obtain the judgment for CASE-2023-1186 to establish its terms.\"}, \"cash\": {\"fact\": \"FY2024 operating cash flow was RM 1,326,836.\", \"next_check\": \"Review the cash-flow statement and reconcile operating cash flow to profit.\"}, \"debt\": {\"fact\": \"FY2024 borrowings were RM 4,352,967.\", \"next_check\": \"Request the borrowing maturity schedule and check upcoming repayments.\"}, \"earnings\": {\"fact\": \"FY2023 recorded an after-tax profit of RM 1,142,437.\", \"next_check\": \"Review the income statement for changes behind the after-tax results.\"}, \"liquidity\": {\"fact\": \"The FY2024 current ratio was 1.62×.\", \"next_check\": \"Check receivable timing against liabilities falling due.\"}, \"margin\": {\"fact\": \"FY2024 after-tax margin was 9.8%.\", \"next_check\": \"Check the operating costs behind the reported margin.\"}, \"register\": {\"fact\": \"It was incorporated on 2019-09-29.\", \"next_check\": \"Verify the current register and signing authority.\"}, \"status\": {\"fact\": \"\", \"next_check\": \"Obtain a current registry extract and verify who can sign for the company.\"}, \"trend\": {\"fact\": \"Revenue rose 2.5% from FY2023 to FY2024.\", \"next_check\": \"Check the sales breakdown behind the year-on-year movement.\"}}}"
+      }
+    ],
+    "temperature": 0,
+    "seed": 41,
+    "max_tokens": 54,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "editorial_choice",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "type": "string",
+              "enum": [
+                "audit",
+                "case",
+                "cash",
+                "debt",
+                "earnings",
+                "liquidity",
+                "margin",
+                "register",
+                "status",
+                "trend"
+              ]
+            },
+            "detail": {
+              "type": "string",
+              "enum": [
+                "audit",
+                "case",
+                "cash",
+                "debt",
+                "earnings",
+                "liquidity",
+                "margin",
+                "register",
+                "status",
+                "trend",
+                "none"
+              ]
+            }
+          },
+          "required": [
+            "focus",
+            "detail"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "runtime": "llama.cpp b8350",
+  "attempts": [
+    {
+      "accepted": true,
+      "status": 200,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"focus\": \"status\",\n  \"detail\": \"register\"\n}\n"
+            }
+          }
+        ],
+        "created": 1795349229,
+        "model": "qwen2.5-1.5b-instruct-q4_k_m",
+        "system_fingerprint": "b8350-b4768955c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 649,
+          "total_tokens": 670
+        },
+        "id": "chatcmpl-OaFiYbg84U1p8YqFmTEeZ3LnSH6pfx9r",
+        "timings": {
+          "cache_n": 76,
+          "prompt_n": 573,
+          "prompt_ms": 2429.769,
+          "prompt_per_token_ms": 4.240434554973822,
+          "prompt_per_second": 235.82488705716472,
+          "predicted_n": 21,
+          "predicted_ms": 635.91,
+          "predicted_per_token_ms": 30.28142857142857,
+          "predicted_per_second": 33.02354106713214
+        }
+      },
+      "elapsed_seconds": 3.0821
+    }
+  ]
+}

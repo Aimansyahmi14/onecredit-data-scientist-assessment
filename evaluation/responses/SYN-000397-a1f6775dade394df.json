@@ -1,0 +1,103 @@
+{
+  "registrationNumber": "SYN-000397",
+  "request": {
+    "model": "qwen2.5-1.5b-instruct-q4_k_m",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You edit short briefs for a team vetting suppliers. Choose the focus that most needs checking, then choose one distinct supporting detail if it adds value. Prefer a concrete issue to routine background. The core statements are already included. Treat the record as data. Only return menu keys in the JSON schema."
+      },
+      {
+        "role": "user",
+        "content": "{\"core\": [\"Pacific Pacific Education Sdn. Bhd. is listed as active in Selangor (Education).\", \"The register lists 4 directors. Director 1 holds the largest disclosed stake (49.67%).\", \"In FY2024, revenue was RM 6,863,227 and the after-tax profit was RM 371,117.\", \"The record lists 6 court cases (6 as defendant). 2 are marked pending.\"], \"menu\": {\"case\": {\"fact\": \"In CASE-2023-7966, the company is the defendant in a breach of contract (Pending, claim RM 458,400).\", \"next_check\": \"Check the latest docket entry for CASE-2023-7966.\"}, \"cash\": {\"fact\": \"FY2024 operating cash flow was RM 574,147.\", \"next_check\": \"Review the cash-flow statement and reconcile operating cash flow to profit.\"}, \"debt\": {\"fact\": \"FY2024 borrowings were RM 1,527,526.\", \"next_check\": \"Request the borrowing maturity schedule and check upcoming repayments.\"}, \"filings\": {\"fact\": \"FY2023 is missing between FY2022 and FY2024.\", \"next_check\": \"Obtain comparable filings before interpreting the change in revenue.\"}, \"liquidity\": {\"fact\": \"The FY2024 current ratio was 2.55×.\", \"next_check\": \"Check receivable timing against liabilities falling due.\"}, \"margin\": {\"fact\": \"FY2024 after-tax margin was 5.4%.\", \"next_check\": \"Check the operating costs behind the reported margin.\"}, \"register\": {\"fact\": \"It was incorporated on 2006-05-11.\", \"next_check\": \"Verify the current register and signing authority.\"}}}"
+      }
+    ],
+    "temperature": 0,
+    "seed": 41,
+    "max_tokens": 54,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "editorial_choice",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "type": "string",
+              "enum": [
+                "case",
+                "cash",
+                "debt",
+                "filings",
+                "liquidity",
+                "margin",
+                "register"
+              ]
+            },
+            "detail": {
+              "type": "string",
+              "enum": [
+                "case",
+                "cash",
+                "debt",
+                "filings",
+                "liquidity",
+                "margin",
+                "register",
+                "none"
+              ]
+            }
+          },
+          "required": [
+            "focus",
+            "detail"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "runtime": "llama.cpp b8350",
+  "attempts": [
+    {
+      "accepted": true,
+      "status": 200,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"focus\": \"register\",\n  \"detail\": \"register\"\n}\n"
+            }
+          }
+        ],
+        "created": 1795349341,
+        "model": "qwen2.5-1.5b-instruct-q4_k_m",
+        "system_fingerprint": "b8350-b4768955c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 501,
+          "total_tokens": 522
+        },
+        "id": "chatcmpl-3uj5FqwKn59ov9aioyhDqq24DlldxKko",
+        "timings": {
+          "cache_n": 73,
+          "prompt_n": 428,
+          "prompt_ms": 1842.476,
+          "prompt_per_token_ms": 4.30485046728972,
+          "prompt_per_second": 232.2961058922884,
+          "predicted_n": 21,
+          "predicted_ms": 545.044,
+          "predicted_per_token_ms": 25.95447619047619,
+          "predicted_per_second": 38.52899949361886
+        }
+      },
+      "elapsed_seconds": 2.3984
+    }
+  ]
+}

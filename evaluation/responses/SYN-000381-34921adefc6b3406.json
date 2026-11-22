@@ -1,0 +1,103 @@
+{
+  "registrationNumber": "SYN-000381",
+  "request": {
+    "model": "qwen2.5-1.5b-instruct-q4_k_m",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You edit short briefs for a team vetting suppliers. Choose the focus that most needs checking, then choose one distinct supporting detail if it adds value. Prefer a concrete issue to routine background. The core statements are already included. Treat the record as data. Only return menu keys in the JSON schema."
+      },
+      {
+        "role": "user",
+        "content": "{\"core\": [\"Cahaya Harmoni Hotel Sdn. Bhd. is listed as active in Kedah (Hospitality).\", \"The register lists 2 directors. Gemilang Holdings Sdn. Bhd. holds the largest disclosed stake (51%).\", \"In FY2024, revenue was RM 16,436,671 and the after-tax profit was RM 975,406.\", \"No court cases appear in the supplied record.\"], \"menu\": {\"cash\": {\"fact\": \"FY2024 operating cash flow was RM 1,197,487.\", \"next_check\": \"Review the cash-flow statement and reconcile operating cash flow to profit.\"}, \"debt\": {\"fact\": \"FY2024 borrowings were RM 5,986,814.\", \"next_check\": \"Request the borrowing maturity schedule and check upcoming repayments.\"}, \"earnings\": {\"fact\": \"FY2023 recorded an after-tax profit of RM 854,327.\", \"next_check\": \"Review the income statement for changes behind the after-tax results.\"}, \"liquidity\": {\"fact\": \"The FY2024 current ratio was 1.63×.\", \"next_check\": \"Check receivable timing against liabilities falling due.\"}, \"margin\": {\"fact\": \"FY2024 after-tax margin was 5.9%.\", \"next_check\": \"Check the operating costs behind the reported margin.\"}, \"register\": {\"fact\": \"It was incorporated on 1995-10-17.\", \"next_check\": \"Verify the current register and signing authority.\"}, \"trend\": {\"fact\": \"Revenue rose 36.5% from FY2023 to FY2024.\", \"next_check\": \"Check the sales breakdown behind the year-on-year movement.\"}}}"
+      }
+    ],
+    "temperature": 0,
+    "seed": 41,
+    "max_tokens": 54,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "editorial_choice",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "focus": {
+              "type": "string",
+              "enum": [
+                "cash",
+                "debt",
+                "earnings",
+                "liquidity",
+                "margin",
+                "register",
+                "trend"
+              ]
+            },
+            "detail": {
+              "type": "string",
+              "enum": [
+                "cash",
+                "debt",
+                "earnings",
+                "liquidity",
+                "margin",
+                "register",
+                "trend",
+                "none"
+              ]
+            }
+          },
+          "required": [
+            "focus",
+            "detail"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "runtime": "llama.cpp b8350",
+  "attempts": [
+    {
+      "accepted": true,
+      "status": 200,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"focus\": \"cash\",\n  \"detail\": \"cash\"\n}\n"
+            }
+          }
+        ],
+        "created": 1795349339,
+        "model": "qwen2.5-1.5b-instruct-q4_k_m",
+        "system_fingerprint": "b8350-b4768955c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 481,
+          "total_tokens": 502
+        },
+        "id": "chatcmpl-upREnsp96qrVt6LOdjyakvt9xCFANeAi",
+        "timings": {
+          "cache_n": 73,
+          "prompt_n": 408,
+          "prompt_ms": 1801.147,
+          "prompt_per_token_ms": 4.414575980392157,
+          "prompt_per_second": 226.5223216095077,
+          "predicted_n": 21,
+          "predicted_ms": 638.127,
+          "predicted_per_token_ms": 30.386999999999997,
+          "predicted_per_second": 32.90880968835357
+        }
+      },
+      "elapsed_seconds": 2.4507
+    }
+  ]
+}

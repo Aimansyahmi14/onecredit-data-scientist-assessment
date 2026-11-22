@@ -1,0 +1,31 @@
+registrationNumber,blind_label,text_sha256,accuracy,usefulness,clarity,rationale
+SYN-000067,A,0d53d8e69b4363d864e8f143fdcacea5de25551b0a2a660f02d8304d35b719dc,2,1,2,"Sales analysis addresses the decline, but the large loss and sub-one current ratio make near-term cash a more pressing check."
+SYN-000067,B,87384a316fb7b85ca3faf46d63dcfb4db852acd577d72a56d64a06488c68f209,2,2,2,The requested reconciliation directly addresses the cash outflow accompanying the loss. The current ratio is absent.
+SYN-000165,A,de981cb0eaa8f66029e7353f7500a79502167db2dfa1fc7432be6f5f016e5ea8,2,1,1,The case is settled and the only plaintiff role is repeated. A financial check would better address 43.1% sales growth and a 0.99 current ratio.
+SYN-000165,B,4a3485e3dd6d24b257550631d1f86d2eb96c08c0f80c293e2e3db556965ca999,2,2,1,Prior and current earnings put rapid expansion in context and the income statement is a relevant check. The single plaintiff role is repeated.
+SYN-000217,A,1b8e57c91ed3cf421a73b3430dbbd408b7c2945978eaa6e09cf07d700570ed64,2,1,2,Sales growth is relevant. The proposed check overlooks the historical audit disclaimer.
+SYN-000217,B,ddd45c447ca9b25c2a781c450d33ef70d8d1ea41126e969ad8f19d2ba113e1b0,2,2,2,Dates both opinions and directs the reviewer to the earlier report and management response. The near-one current ratio is absent.
+SYN-000267,A,be99a1398a13418f63ad0d5a993e2362e81fb9bc5f77354528175247c81a422a,2,2,2,The docket check names the pending plaintiff claim. The filing amount and role agree with the source.
+SYN-000267,B,c8daebd8d374f81c84a4cb3d6a95c5388cb04676a9446f55065b380b52cda553,2,1,2,"The pending plaintiff claim is visible, but the chosen earnings check leaves the only open proceeding unexplored."
+SYN-000302,A,d1d11dbe9cfb8161c1ba56b74995fce6aa5344d19e4bc858454f2e6afc51d585,2,2,2,Makes the evidence gap clear and requests the missing statements. The incorporation date is accurate.
+SYN-000302,B,34eac2936fe3a9037ab4edfc53e9d7679680104db4bd024ffc1a6f74a0a5c244,2,2,2,The next step directly addresses the missing financial history in a short brief.
+SYN-000381,A,b8626b1561b30949ddc3dbec4f98610c3b86e4004f1fa6dc81d15cb400c71c94,2,2,2,The largest holding and rapid growth are explicit. Checking the sales breakdown addresses the largest change.
+SYN-000381,B,3520dcd0a7eb4903e525aaea903466726c9d7a16258854ba66d7e5a3d04f8167,2,2,2,The operating cash figure and the request to reconcile earnings give a defensible way to verify reported growth.
+SYN-000397,A,8bb6c6f994c800dac5b2cee86a79414c14e98a55e12cd5a20b7e6cc665209689,2,2,2,"The next step identifies an open defendant docket. The gap is explicit, though the large settled claim is omitted."
+SYN-000397,B,024d55a47c4171ff7e0ea73c0988936d25923b93407685cf86dc84615156e7f2,2,1,2,"Comparable filings are worth requesting, but two pending defendant matters warrant a docket check. The large settlement claim amount is absent."
+SYN-000640,A,b1cad0d9d204099e63f8ba08eece6490a356d03daa24123d799dd630cd4f46a0,2,2,1,"Obtaining the named judgment is the right check. The aggregate pending count beside a different, judged case requires a second read."
+SYN-000640,B,f0cb4b34e8889cfee66b6db6ff33f4caf49752d6eb1c806b213f18170f4b2685,2,2,1,"The named judgment and amount match the record. The pending count is not tied to a role, making the mixed-role paragraph harder to scan."
+SYN-000802,A,984e5891b93b5503904fbdab49865add89c0c05e85ed6dff651a592f1a879408,2,2,2,Requesting a comparable period is justified by the single filing. The negative operating cash flow is absent.
+SYN-000802,B,e913b3f8a2bb76cb7e70fcf14dc7bad2e19acaa33aeba77f2d7e3528636fd7d0,2,2,2,The cash-flow check addresses a substantial loss and outflow. The single-year limitation is stated.
+SYN-001102,A,71d98bc2e090a535d8d748ecc746b0fb74d0f2f6f61e9dd97dc077e90a7de374,2,2,2,The proposed sales breakdown directly tests an unusually large reported rise.
+SYN-001102,B,e6cc31fcc480d6e02f0d4c6565a138f069035e1c23b2071bfc40fc352d3642fe,2,2,2,Reconciliation to operating cash is a relevant check on the profit accompanying rapid growth.
+SYN-001212,A,a3fa44308bd8ef228350ae7ca0dbe0c6c1e5e019b7781b27125fef82f12b3e13,2,2,1,"The registry extract addresses the winding-up status. The legal paragraph combines two roles, a pending total and a separate judgment."
+SYN-001212,B,4e0a40c16658afb91965590e4b809c57808bcdcafa68f2987d569e1217c1db53,2,2,1,The registry action is material and the named petition is accurate. Several procedural facts share one dense legal paragraph.
+SYN-001253,A,1f7a625ab92ffa522c573e43706a965b1c4538813d25bff9df00e833a44c9dd5,2,1,2,"The missing filing is disclosed, but a routine signatory check does not resolve the comparability gap."
+SYN-001253,B,3a0826bb8c245112fca478d2816a6f9dfd3eeeac43dd8ec08bee9a2100fc8573,2,2,2,The requested comparative filings directly address the missing FY2023.
+SYN-001569,A,66c7301f1f14fbd4628cd50187d541df233b430d0651bee9a1bc129c2e204b3d,2,2,2,The text dates the disclaimer and subsequent unqualified opinion and identifies the underlying report for review.
+SYN-001569,B,592d09fe596a8f48e57caf613288c060f431da10a1a12d293cd17453d7384662,2,1,2,"The sales check is relevant but misses the unusual earlier audit, which the brief omits."
+SYN-001618,A,c180bf23d254a2dc865968e837bfb5b23a009d77b92ecf0b42a5167823aa2bfd,2,2,2,Cash flow and the cited loss support the reconciliation request. Corporate ownership is explicit.
+SYN-001618,B,ff3470c3b5673e30057639cfce57baac286ee3898325fd92a860ce43b30397c1,2,1,2,"Sales are declining, but the loss and tight liquidity make cash or liability timing more urgent."
+SYN-001829,A,e0ed168f9ba45d0dd426acb4ae7068431f77ccb4790916d76686a8f2038e171a,2,2,2,"The named defendant docket is the open claim. Its role, amount and the latest profit match the record."
+SYN-001829,B,8a147745bb62211bdeeffeca62a0323e345d5da7c648b57db6bab8628edbb7ce,2,2,2,The next step correctly isolates the open defendant claim from the other plaintiff case. The latest profit matches the statement.

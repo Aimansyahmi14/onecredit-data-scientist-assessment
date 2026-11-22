@@ -1,0 +1,333 @@
+{
+  "SYN-000029": {
+    "split": "pilot",
+    "reason": "Ordinary full filings and no litigation",
+    "facts": {
+      "Profit in latest filing": [
+        "96,805"
+      ],
+      "Latest revenue growth": [
+        "2.4%"
+      ],
+      "Empty supplied court record": [
+        "no court cases"
+      ]
+    }
+  },
+  "SYN-000286": {
+    "split": "pilot",
+    "reason": "Gapped filings and a live winding-up petition",
+    "facts": {
+      "Missing intermediate comparison": [
+        "FY2023",
+        "missing"
+      ],
+      "Pending defendant petition": [
+        "winding-up petition",
+        "pending",
+        "defendant"
+      ],
+      "Petition claim amount": [
+        "CASE-2022-9003",
+        "355,900"
+      ]
+    }
+  },
+  "SYN-000545": {
+    "split": "pilot",
+    "reason": "Winding up with an earlier going-concern observation",
+    "facts": {
+      "Registry status": [
+        "listed as winding up"
+      ],
+      "Historical audit observation": [
+        "FY2022",
+        "material uncertainty on going concern"
+      ],
+      "Judgment on a defendant petition": [
+        "winding-up petition",
+        "judgment entered",
+        "defendant"
+      ]
+    }
+  },
+  "SYN-001203": {
+    "split": "pilot",
+    "reason": "No filings, corporate ownership and a settled plaintiff claim",
+    "facts": {
+      "Absent statements": [
+        "no financial statements"
+      ],
+      "Corporate holding": [
+        "Gemilang Holdings",
+        "70%"
+      ],
+      "Settled plaintiff claim": [
+        "plaintiff",
+        "settled",
+        "22,500"
+      ]
+    }
+  },
+  "SYN-000067": {
+    "split": "locked",
+    "reason": "Losses with weak liquidity",
+    "facts": {
+      "Latest loss": [
+        "loss",
+        "7,515,861"
+      ],
+      "Latest negative operating cash flow": [
+        "operating cash flow",
+        "-RM 5,939,447"
+      ],
+      "Current ratio below one": [
+        "current ratio",
+        "0.81"
+      ]
+    }
+  },
+  "SYN-000165": {
+    "split": "locked",
+    "reason": "Rapid growth and one settled plaintiff claim",
+    "facts": {
+      "Revenue growth": [
+        "43.1%"
+      ],
+      "Settled claim and role": [
+        "plaintiff",
+        "settled",
+        "169,800"
+      ],
+      "Largest disclosed shareholder": [
+        "Director 5",
+        "98.34%"
+      ]
+    }
+  },
+  "SYN-000217": {
+    "split": "locked",
+    "reason": "Historical disclaimer followed by an unqualified audit",
+    "facts": {
+      "Historical disclaimer": [
+        "FY2023",
+        "disclaimer of opinion"
+      ],
+      "Subsequent audit": [
+        "FY2024",
+        "unqualified"
+      ],
+      "Latest current ratio": [
+        "current ratio",
+        "0.96"
+      ]
+    }
+  },
+  "SYN-000267": {
+    "split": "locked",
+    "reason": "Five plaintiff-side cases with different statuses",
+    "facts": {
+      "Five plaintiff cases": [
+        "5 as plaintiff"
+      ],
+      "Pending claim amount": [
+        "CASE-2024-5974",
+        "177,000",
+        "pending"
+      ],
+      "Largest disclosed shareholder": [
+        "Director 1",
+        "89.67%"
+      ]
+    }
+  },
+  "SYN-000302": {
+    "split": "locked",
+    "reason": "No filings and empty court list",
+    "facts": {
+      "Absent statements": [
+        "no financial statements"
+      ],
+      "Largest disclosed shareholder": [
+        "Director 2",
+        "58.7%"
+      ],
+      "Empty supplied court record": [
+        "no court cases"
+      ]
+    }
+  },
+  "SYN-000381": {
+    "split": "locked",
+    "reason": "Majority corporate shareholder and growing revenue",
+    "facts": {
+      "Corporate holding": [
+        "Gemilang Holdings",
+        "51%"
+      ],
+      "Revenue growth": [
+        "36.5%"
+      ],
+      "Latest after-tax profit": [
+        "975,406"
+      ]
+    }
+  },
+  "SYN-000397": {
+    "split": "locked",
+    "reason": "Missing FY2023, multiple defendant cases, large settled claim",
+    "facts": {
+      "Gap distinguished from YoY": [
+        "FY2023",
+        "missing"
+      ],
+      "Six defendant cases": [
+        "6 as defendant"
+      ],
+      "Large settled claim": [
+        "settled",
+        "7,427,000"
+      ]
+    }
+  },
+  "SYN-000640": {
+    "split": "locked",
+    "reason": "Six cases with mixed roles, including defendant judgment",
+    "facts": {
+      "Role count": [
+        "1 as defendant",
+        "5 as plaintiff"
+      ],
+      "Defendant judgment": [
+        "CASE-2025-9161",
+        "judgment entered",
+        "defendant"
+      ],
+      "Claim on that case": [
+        "CASE-2025-9161",
+        "310,600"
+      ]
+    }
+  },
+  "SYN-000802": {
+    "split": "locked",
+    "reason": "Only one financial year and an after-tax loss",
+    "facts": {
+      "Limited history": [
+        "only FY2024"
+      ],
+      "Latest loss": [
+        "loss",
+        "2,575,829"
+      ],
+      "Negative operating cash flow": [
+        "operating cash flow",
+        "-RM 1,727,574"
+      ]
+    }
+  },
+  "SYN-001102": {
+    "split": "locked",
+    "reason": "Growing sales and profits with no litigation",
+    "facts": {
+      "Revenue growth": [
+        "43.5%"
+      ],
+      "Latest profit": [
+        "6,750,598"
+      ],
+      "Empty supplied court record": [
+        "no court cases"
+      ]
+    }
+  },
+  "SYN-001212": {
+    "split": "locked",
+    "reason": "Winding up, mixed legal roles and falling revenue",
+    "facts": {
+      "Registry status": [
+        "listed as winding up"
+      ],
+      "Judgment on a defendant winding-up petition": [
+        "defendant",
+        "winding-up petition",
+        "judgment entered"
+      ],
+      "Revenue decline": [
+        "21.8%",
+        "fell"
+      ]
+    }
+  },
+  "SYN-001253": {
+    "split": "locked",
+    "reason": "Two nonconsecutive filings without litigation",
+    "facts": {
+      "Missing intermediate filing": [
+        "FY2023",
+        "missing"
+      ],
+      "Latest revenue": [
+        "6,520,818"
+      ],
+      "Largest disclosed shareholder": [
+        "Director 4",
+        "90.66%"
+      ]
+    }
+  },
+  "SYN-001569": {
+    "split": "locked",
+    "reason": "Oldest filing has a disclaimer",
+    "facts": {
+      "Historical disclaimer": [
+        "FY2022",
+        "disclaimer of opinion"
+      ],
+      "Latest audit": [
+        "FY2024",
+        "unqualified"
+      ],
+      "Latest profit": [
+        "195,075"
+      ]
+    }
+  },
+  "SYN-001618": {
+    "split": "locked",
+    "reason": "Wholly corporate-owned, loss-making company",
+    "facts": {
+      "Corporate ownership": [
+        "Murni Holdings",
+        "100%"
+      ],
+      "Latest loss": [
+        "loss",
+        "1,262,512"
+      ],
+      "Operating cash outflow": [
+        "operating cash flow",
+        "-RM 1,048,216"
+      ]
+    }
+  },
+  "SYN-001829": {
+    "split": "locked",
+    "reason": "Two legal roles and a live defendant claim",
+    "facts": {
+      "Mixed roles": [
+        "1 as defendant",
+        "1 as plaintiff"
+      ],
+      "Pending defendant claim": [
+        "CASE-2021-3062",
+        "defendant",
+        "pending",
+        "126,600"
+      ],
+      "Latest profit": [
+        "1,497,176"
+      ]
+    }
+  }
+}
